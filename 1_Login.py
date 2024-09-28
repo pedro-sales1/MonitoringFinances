@@ -48,6 +48,7 @@ def check_user_not_exist(user,passcode):
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if not st.session_state.logged_in:
+    st.write(os.getcwd())
     col1, col2, col3 = st.columns([1,5,1])
     aba_login_cadastro = st.sidebar.selectbox("Escolha uma opção:",options=["Login","Cadastro"])
     if aba_login_cadastro == "Login":
