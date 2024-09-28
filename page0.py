@@ -23,7 +23,7 @@ def categoria():
     col1,col2 = st.columns(2)
     ### CATEGORIA
     with col1:
-        
+        st.write(os.getcwd())
         with st.container(border=True):
             coluna1,coluna2,coluna3 = st.columns([3.5,10,3.5])
             with coluna2:
